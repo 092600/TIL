@@ -1,12 +1,35 @@
 import java.util.*;
 
-public class Q1152{
+public class Q2941 {
     public static void main(String[] args){
-        String[] cro_alphabet_list = {"c=","c-","dz=","d-","lj","nj","s=","z="};
-        String[] alphabet_list = {"a","b","c","d","e","f","g","h","i","j"
-                ,"k","l",'m','n',"o","p","q",'r','s','t',
-                    'u',"v",'w',"x","y","z"};
-        System.out.println(cro_alphabet_list);
-        System.out.println(alphabet_list);
+        Map<String, String> map1 = Map.of(
+                "lj", ".",
+                "nj", ".",
+                "dz=", "."
+        );
+        Map<String, String> map2 = Map.of(
+                "c=",  ".",
+                "c-",  ".",
+                "d-", ".",
+                "s=", ".",
+                "z=", "."
+        );
+
+        Scanner stdIn = new Scanner(System.in);
+        String in = stdIn.nextLine();
+
+        for (String key : map1.keySet()){
+            if (in.indexOf(key) != -1){
+                in = in.replace(key, map1.get(key));
+            }
+
+        }
+        for (String key : map2.keySet()){
+            if (in.indexOf(key) != -1){
+                in = in.replace(key, map2.get(key));
+            }
+
+        }
+        System.out.println(in.length());
     }
 }
