@@ -1,2 +1,2 @@
 # TIL
-Today I Learned, 오늘도 함
+오늘도 내일도, TIL ( Today I Learnd )
