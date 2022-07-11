@@ -5,9 +5,9 @@
 ## 자바
 
 ### 자바의 정석 기초
-- <a src="https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EB%B3%80%EC%88%98/%EB%B3%80%EC%88%98.md">변수</a>
-- <a src="https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EC%97%B0%EC%82%B0/%EC%97%B0%EC%82%B0.md">연산</a>
-- <a src="https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EC%A1%B0%EA%B1%B4%EB%AC%B8/%EC%A1%B0%EA%B1%B4%EB%AC%B8.md">조건문</a>
-- <a src="https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EB%B0%98%EB%B3%B5%EB%AC%B8/%EB%B0%98%EB%B3%B5%EB%AC%B8.md">반복문</a>
-- <a src="https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EB%B0%B0%EC%97%B4/%EB%B0%B0%EC%97%B4.md">배열</a>
-- <a src="test">클래스</a>
+- #### [변수](https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EB%B0%B0%EC%97%B4/%EB%B0%B0%EC%97%B4.md)
+- #### [연산](https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EC%97%B0%EC%82%B0/%EC%97%B0%EC%82%B0.md)
+- #### [조건문](https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EC%A1%B0%EA%B1%B4%EB%AC%B8/%EC%A1%B0%EA%B1%B4%EB%AC%B8.md)
+- #### [반복문](https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EB%B0%98%EB%B3%B5%EB%AC%B8/%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
+- #### [배열](https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%EB%B0%B0%EC%97%B4/%EB%B0%B0%EC%97%B4.md)
+- #### [클래스](https://github.com/092600/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D/%ED%81%B4%EB%9E%98%EC%8A%A4/%ED%81%B4%EB%9E%98%EC%8A%A4.md)
