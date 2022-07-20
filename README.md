@@ -33,7 +33,7 @@
 ### SpringQuickStart
 
 - [Day1](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81/SpringQuickStart/Day1/Day1.md)
-- [Day2]()
+- [Day2](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81/SpringQuickStart/Day2/Day2.md)
 - [Day3]()
 
 
@@ -53,7 +53,7 @@
 
 ### 검색 알고리즘
 - [선형 검색 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-- [이진 검색 알고리즘]()
+- [이진 검색 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
 
 ### 재귀 알고리즘
 - [재귀 알고리즘]()
