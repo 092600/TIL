@@ -16,7 +16,6 @@
 - [배열](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%EB%B0%B0%EC%97%B4/%EB%B0%B0%EC%97%B4.md)
 - [클래스](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%ED%81%B4%EB%9E%98%EC%8A%A4/%ED%81%B4%EB%9E%98%EC%8A%A4.md)
 - [상속](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%EC%83%81%EC%86%8D/%EC%83%81%EC%86%8D.md)
-- [컬렉션](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%EC%BB%AC%EB%A0%89%EC%85%98/%EC%BB%AC%EB%A0%89%EC%85%98.md)
 
 ### HeadFirstDesignPattern
 
@@ -24,8 +23,7 @@
 
 - [Chap01](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap01.md)
 - [Chap02](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap02.md)
-- [Chap03](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap03.md)
-- [Chap04](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap04.md)
+- [Chap03]()
 
 
 ## 스프링
