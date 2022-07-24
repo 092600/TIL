@@ -67,5 +67,5 @@
 ### 단계별로 풀어보기
 
 #### 기본수학 1
-- [손익분기점][https://github.com/092600/TIL/tree/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C%20%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/%EC%86%90%EC%9D%B5%EB%B6%84%EA%B8%B0%EC%A0%90.java]
-- [분수찾기](https://github.com/092600/TIL/tree/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C%20%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/%EB%B6%84%EC%88%98%EC%B0%BE%EA%B8%B0.java)
+- [손익분기점](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q1712.java)
+- [분수찾기](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q1193.java)

@@ -2,7 +2,7 @@ package 백준.단계별로_풀어보기.기본수학;
 
 import java.util.Scanner;
 
-public class BreakEvenPoint {
+public class Q1712 {
     public static void main(String[] args){
         Scanner stdIn = new Scanner(System.in);
         String[] input = stdIn.nextLine().split(" ");
