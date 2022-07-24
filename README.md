@@ -17,6 +17,7 @@
 - [클래스](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%ED%81%B4%EB%9E%98%EC%8A%A4/%ED%81%B4%EB%9E%98%EC%8A%A4.md)
 - [상속](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%EC%83%81%EC%86%8D/%EC%83%81%EC%86%8D.md)
 - [컬렉션](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%EC%BB%AC%EB%A0%89%EC%85%98/%EC%BB%AC%EB%A0%89%EC%85%98.md)
+- [제네릭](https://github.com/092600/TIL/tree/master/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%A0%95%EC%84%9D%20%EA%B8%B0%EC%B4%88/%EC%A0%9C%EB%84%A4%EB%A6%AD/%EC%A0%9C%EB%84%A4%EB%A6%AD.md)
 
 ### HeadFirstDesignPattern
 
@@ -61,3 +62,10 @@
 - [재귀 알고리즘]()
 
 ---
+
+## 백준
+### 단계별로 풀어보기
+
+#### 기본수학 1
+- [손익분기점][https://github.com/092600/TIL/tree/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C%20%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/%EC%86%90%EC%9D%B5%EB%B6%84%EA%B8%B0%EC%A0%90.java]
+- [분수찾기](https://github.com/092600/TIL/tree/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C%20%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/%EB%B6%84%EC%88%98%EC%B0%BE%EA%B8%B0.java)
