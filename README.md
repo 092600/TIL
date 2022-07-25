@@ -70,3 +70,4 @@
 - [손익분기점](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q1712.java)
 - [분수찾기](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q1193.java)
 - [벌집](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q2292.java)
+- [달팽이는 올라가고 싶다](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q2869.java)
