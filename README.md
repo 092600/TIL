@@ -71,3 +71,10 @@
 - [분수찾기](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q1193.java)
 - [벌집](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q2292.java)
 - [달팽이는 올라가고 싶다](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q2869.java)
+- [ACM 호텔](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q10250.java)
+- [부녀회장이 될테야](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q2775.java)
+- [설탕 배달](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%99/Q2839.java)
+
+#### 기본수학 2
+- [소수 찾기](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%992/Q1978.java)
+- [소수](https://github.com/092600/TIL/blob/master/%EB%B0%B1%EC%A4%80/%EB%8B%A8%EA%B3%84%EB%B3%84%EB%A1%9C_%ED%92%80%EC%96%B4%EB%B3%B4%EA%B8%B0/%EA%B8%B0%EB%B3%B8%EC%88%98%ED%95%992/Q2581.java)
