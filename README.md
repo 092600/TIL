@@ -26,15 +26,6 @@
 - [Chap04](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap04.md)
 
 --- 
-## 스프링
-
-### SpringQuickStart
-
-- [Day1](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81/SpringQuickStart/Day1/Day1.md)
-- [Day2](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81/SpringQuickStart/Day2/Day2.md)
-- [Day3]()
-
----
 
 ## 자료구조
 
@@ -43,6 +34,10 @@
 - [원형 큐](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%ED%81%90/%EC%9B%90%ED%98%95%ED%81%90.md)
 
 
+## JPA
+- [JPA01](https://github.com/092600/TIL/blob/master/JPA/JPA01.md)
+- [JPA02](https://github.com/092600/TIL/blob/master/JPA/JPA02.md)
+- [JPA03](https://github.com/092600/TIL/blob/master/JPA/JPA03.md)
 ---
 ## 알고리즘
 
