@@ -28,7 +28,7 @@
 --- 
 ## 개념 정리
 - [인터넷](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%9D%B8%ED%84%B0%EB%84%B7.md)
-- [인증&인가]()
+- [인증과 인가]()
 ---
 ## 자료구조
 
