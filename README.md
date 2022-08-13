@@ -26,6 +26,9 @@
 - [Chap04](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap04.md)
 
 --- 
+## 개념 정리
+- [인터넷](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%9D%B8%ED%84%B0%EB%84%B7.md)
+
 
 ## 자료구조
 
@@ -34,7 +37,7 @@
 - [원형 큐](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%ED%81%90/%EC%9B%90%ED%98%95%ED%81%90.md)
 
 
-## JPA
+## 자바 ORM 표준 JPA 프로그래밍
 - [JPA01](https://github.com/092600/TIL/blob/master/JPA/JPA01.md)
 - [JPA02](https://github.com/092600/TIL/blob/master/JPA/JPA02.md)
 - [JPA03](https://github.com/092600/TIL/blob/master/JPA/JPA03.md)
