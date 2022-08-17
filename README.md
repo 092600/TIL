@@ -28,19 +28,21 @@
 --- 
 ## 개념 정리
 - [인터넷](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%9D%B8%ED%84%B0%EB%84%B7.md)
-
-
+- [인증&인가]()
+---
 ## 자료구조
 
 - [스택](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D/%EC%8A%A4%ED%83%9D.md)
 - [큐](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90/%ED%81%90.md)
 - [원형 큐](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%ED%81%90/%EC%9B%90%ED%98%95%ED%81%90.md)
 
-
+---
 ## 자바 ORM 표준 JPA 프로그래밍
 - [JPA01](https://github.com/092600/TIL/blob/master/JPA/JPA01.md)
 - [JPA02](https://github.com/092600/TIL/blob/master/JPA/JPA02.md)
 - [JPA03](https://github.com/092600/TIL/blob/master/JPA/JPA03.md)
+- [JPA04](https://github.com/092600/TIL/blob/master/JPA/JPA04.md)
+- [JPA05](https://github.com/092600/TIL/blob/master/JPA/JPA05.md)
 ---
 ## 알고리즘
 
