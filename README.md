@@ -23,12 +23,12 @@
 - [Chap01](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap01.md)
 - [Chap02](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap02.md)
 - [Chap03](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap03.md)
-- [Chap04](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap04.md)
+- [Chap04](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap04/chap04.md)
 
 --- 
 ## 개념 정리
 - [인터넷](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%9D%B8%ED%84%B0%EB%84%B7.md)
-- [인증과 인가]()
+- [인증과 인가](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%9D%B8%EC%A6%9D%EA%B3%BC%20%EC%9D%B8%EA%B0%80.md)
 ---
 ## 자료구조
 
@@ -43,6 +43,7 @@
 - [JPA03](https://github.com/092600/TIL/blob/master/JPA/JPA03.md)
 - [JPA04](https://github.com/092600/TIL/blob/master/JPA/JPA04.md)
 - [JPA05](https://github.com/092600/TIL/blob/master/JPA/JPA05.md)
+- [JPA06](https://github.com/092600/TIL/blob/master/JPA/JPA06.md)
 ---
 ## 알고리즘
 
