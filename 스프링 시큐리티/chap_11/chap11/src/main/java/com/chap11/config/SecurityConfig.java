@@ -43,8 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         BasicAuthenticationFilter.class)
                 .addFilterAfter(
                         jwtAuthenticationFilter,
-                        BasicAuthenticationFilter.class
-                );
+                        BasicAuthenticationFilter.class);
 
         http.authorizeRequests()
                 .anyRequest().authenticated();
