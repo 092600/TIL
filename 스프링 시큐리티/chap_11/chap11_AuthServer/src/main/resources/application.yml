@@ -3,3 +3,19 @@ spring:
     url: jdbc:mysql://localhost/chap11
     username: root
     password: tlawjdgns1!
+
+
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    generate-ddl: true
+
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        format_sql: true
+
