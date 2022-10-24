@@ -20,6 +20,7 @@ public class Q4673 {
                 System.out.println(i);
             }
         }
+
     }
 }
 
