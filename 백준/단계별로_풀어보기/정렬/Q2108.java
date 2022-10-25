@@ -21,8 +21,9 @@
 //
 //넷째 줄에는 범위를 출력한다.
 
+import java.lang.reflect.Array;
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Map.Entry;
 
 public class Q2108 {
     public static void main(String[] args){
@@ -32,34 +33,41 @@ public class Q2108 {
         int[] lst = new int[n];
         int tmp; int avg = 0; int mid; int freq; int range;
 
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> mapForFreq = new HashMap<Integer, Integer>();
 
         for (int i=0;i<n;i++){
             tmp = stdIn.nextInt();
             lst[i] = tmp;
             avg += tmp;
-            if (map.containsKey(tmp)) {
-                map.put(tmp, map.get(tmp)+1);
-            } else {
-                map.put(tmp, 1);
+
+
+            mapForFreq.put(tmp, mapForFreq.getOrDefault(tmp, 0)+1);
+        }
+
+
+        Integer maxFreqValue = Collections.max(mapForFreq.values());
+        List maxFreqList = new ArrayList<Integer>();
+        for (Integer key : mapForFreq.keySet()){
+            if (mapForFreq.get(key) == maxFreqValue){
+                maxFreqList.add(key);
             }
         }
+
+        if (maxFreqList.size() == 1){
+            freq = (int) maxFreqList.get(0);
+        } else {
+            Collections.sort(maxFreqList);
+            freq = (int) maxFreqList.get(1);
+        }
+
 
         Arrays.sort(lst);
 
         avg = Math.round(avg/(float)n); mid = lst[(n-1)/2]; range = lst[n-1] - lst[0];
 
-        System.out.println(avg +", "+mid+", "+range);
-
-        Set keys = map.keySet();
-        Collection<Integer> vals = map.values();
-        System.out.println(keys);
-        System.out.println(map.values());
-
-
-
-//        System.out.println(keys+", "+ vals);
-
-
+        System.out.println(avg);
+        System.out.println(mid);
+        System.out.println(freq);
+        System.out.println(range);
     }
 }
