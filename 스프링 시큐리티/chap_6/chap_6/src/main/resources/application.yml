@@ -1,6 +1,20 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost/security
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chap6?serverTimezone=Asia/Seoul
     username: root
     password: tlawjdgns1!
 
+
+  jpa:
+    database: mysql # 사용 DB
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true # SQL 문이 실행될때 보여줌
+    generate-ddl: true #
+
+    hibernate:
+      ddl-auto: update # 프로젝트 실행 시 테이블 생성
+
+    properties:
+      hibernate:
+        format_sql: true

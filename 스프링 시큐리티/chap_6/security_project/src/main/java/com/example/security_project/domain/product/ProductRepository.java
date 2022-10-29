@@ -1,9 +1,0 @@
-package com.example.security_project.domain.product;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface ProductRepository extends JpaRepository<Product, Integer> {
-
-}

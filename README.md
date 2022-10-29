@@ -45,7 +45,6 @@
 - [Chap12](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_12/chap_12.md)
 - [Chap13](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_13/chap_13.md)
 - [Chap14](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_14/chap_14.md)
-- [Chap15](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_15/chap_15.md)
 
 ---
 
