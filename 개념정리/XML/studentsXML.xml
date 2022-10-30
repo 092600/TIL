@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<students>
+    <student>
+        <number>1</number>
+        <name age="23">sim</name>
+        <mathScore>100</mathScore>
+        <korScore>95</korScore>
+    </student>
+    <student>
+        <number>2</number>
+        <name age="21">kim</name>
+        <mathScore>90</mathScore>
+        <korScore>90</korScore>
+    </student>
+    <student>
+        <number>3</number>
+        <name age="25">park</name>
+        <mathScore>95</mathScore>
+        <korScore>100</korScore>
+    </student>
+</students>
