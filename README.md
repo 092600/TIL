@@ -1,7 +1,11 @@
 # Today I Learned 
 
 
+<br>
+
 ## 자바
+
+<br>
 
 ### 자바의 정석 기초
 
@@ -20,6 +24,8 @@
 
 ---
 
+<br>
+
 ### HeadFirstDesignPattern
 
 - [Chap01](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap01.md)
@@ -28,6 +34,9 @@
 - [Chap04](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%B0%94/HadFirstDesignPattern/chap04/chap04.md)
 
 --- 
+
+<br>
+<br>
 
 ## 스프링 시큐리티
 ### Spring Security In Action
@@ -45,24 +54,64 @@
 - [OAuth2 프레임워크](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_12/chap_12.md)
 - [OAuth2 권한 부여 서버 구현하기](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_13/chap_13.md)
 - [OAuth2 리소스 서버 구현하기](https://github.com/092600/TIL/blob/master/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/chap_14/chap_14.md)
-
 ---
+
+<br>
+<br>
 
 ## 개념 정리
 - [인터넷](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/인터넷/%EC%9D%B8%ED%84%B0%EB%84%B7.md)
 - [인증과 인가](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/인증과%20인가/%EC%9D%B8%EC%A6%9D%EA%B3%BC%20%EC%9D%B8%EA%B0%80.md)
 - [쿠키와 세션](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98%20with%20HttpSession/Cookie%20and%20Session%20with%20HttpSession.md)
 - [양방향 암호화](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%96%91%EB%B0%A9%ED%96%A5%20%EC%95%94%ED%98%B8%ED%99%94/%EC%96%91%EB%B0%A9%ED%96%A5%20%EC%95%94%ED%98%B8%ED%99%94.md)
+- [Markup Language & HTML](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/Markup%20Language/Markup%20Language.md)
+- [XML](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/XML/XML.md)
+- [JSON](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/JSON/JSON.md)
+- [프레임워크와 라이브러리](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC.md)
 
 ---
+
+<br>
+<br>
+
 ## 자료구조
 
 - [스택](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%8A%A4%ED%83%9D/%EC%8A%A4%ED%83%9D.md)
 - [큐](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%81%90/%ED%81%90.md)
 - [원형 큐](https://github.com/092600/TIL/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%9B%90%ED%98%95%ED%81%90/%EC%9B%90%ED%98%95%ED%81%90.md)
 
+<br>
+
 ---
-## 자바 ORM 표준 JPA 프로그래밍
+
+<br>
+<br>
+
+## 알고리즘
+
+<br>
+
+### 검색 알고리즘
+
+- [선형 검색 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+- [이진 검색 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+---
+<br>
+
+
+### 재귀 알고리즘
+- [재귀 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+
+---
+
+<br>
+
+## 데이터베이스
+### Real MySQL 
+- []()
+
+### 자바 ORM 표준 JPA 프로그래밍
 - [JPA01](https://github.com/092600/TIL/blob/master/JPA/JPA01.md)
 - [JPA02](https://github.com/092600/TIL/blob/master/JPA/JPA02.md)
 - [JPA03](https://github.com/092600/TIL/blob/master/JPA/JPA03.md)
@@ -70,16 +119,3 @@
 - [JPA05](https://github.com/092600/TIL/blob/master/JPA/JPA05.md)
 - [JPA06](https://github.com/092600/TIL/blob/master/JPA/JPA06.md)
 ---
-## 알고리즘
-
-### 검색 알고리즘
-- [선형 검색 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%84%A0%ED%98%95%20%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-- [이진 검색 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9D%B4%EC%A7%84%20%EA%B2%80%EC%83%89%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-
----
-
-### 재귀 알고리즘
-- [재귀 알고리즘](https://github.com/092600/TIL/blob/master/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%AC%EA%B7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-
----
-
