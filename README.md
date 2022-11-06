@@ -63,11 +63,17 @@
 - [인터넷](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/인터넷/%EC%9D%B8%ED%84%B0%EB%84%B7.md)
 - [인증과 인가](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/인증과%20인가/%EC%9D%B8%EC%A6%9D%EA%B3%BC%20%EC%9D%B8%EA%B0%80.md)
 - [쿠키와 세션](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98%20with%20HttpSession/Cookie%20and%20Session%20with%20HttpSession.md)
+
+- [프레임워크와 라이브러리](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC.md)
+
+- [단방향 암호화](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EB%8B%A8%EB%B0%A9%ED%96%A5%20%EC%95%94%ED%98%B8%ED%99%94/%EB%8B%A8%EB%B0%A9%ED%96%A5%20%EC%95%94%ED%98%B8%ED%99%94.md)
 - [양방향 암호화](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%EC%96%91%EB%B0%A9%ED%96%A5%20%EC%95%94%ED%98%B8%ED%99%94/%EC%96%91%EB%B0%A9%ED%96%A5%20%EC%95%94%ED%98%B8%ED%99%94.md)
+
 - [Markup Language & HTML](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/Markup%20Language/Markup%20Language.md)
 - [XML](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/XML/XML.md)
 - [JSON](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/JSON/JSON.md)
-- [프레임워크와 라이브러리](https://github.com/092600/TIL/tree/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC.md)
+- [YAML](https://github.com/092600/TIL/blob/master/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC/YAML/YAML.md)
+
 
 ---
 
@@ -111,7 +117,8 @@
 ### Real MySQL 
 - [MySQL이란](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap1/chap1.md)
 - [MySQL 설치 및 실행](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap2/chap2.md)
-- [사용자 및 권한](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap2/chap3.md)
+- [사용자 및 권한](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap3/chap3.md)
+- [MySQL 아키텍쳐](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap4/chap4.md)
 
 ### 자바 ORM 표준 JPA 프로그래밍
 - [JPA01](https://github.com/092600/TIL/blob/master/JPA/JPA01.md)
