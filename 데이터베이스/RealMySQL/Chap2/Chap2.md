@@ -290,7 +290,38 @@ RESET PERSIST;
 그렇기 때문에 만약 mysql-auto.cnf에 있는 변경사항을 수정하고 싶을 때는 RESET PERSIST 명령어를 사용하도록 하자.
 
 
+# 번외
 
+MySQL 도큐먼트에서 제공하는 대표 샘플 DB인 employees를 다운받고 설치해보자.
 
+1. MySQL employees 다운받기
+URL : https://github.com/datacharmer/test_db, 해당 URL로 들어가 파일을 다운로드를 받자.
+
+2. 다운받은 파일의 압축을 해제한다.
+3. 프롬프트 창 혹은 터미널에서 해당 파일위치로 이동한다.
+4. mysql -u root -p <employees.sql
+    ```bash
+    ❯ mysql -u root -p <employees.sql                                                                         ─╯
+    Enter password:
+    INFO
+    CREATING DATABASE STRUCTURE
+    INFO
+    storage engine: InnoDB
+    INFO
+    LOADING departments
+    INFO
+    LOADING employees
+    INFO
+    LOADING dept_emp
+    INFO
+    LOADING dept_manager
+    INFO
+    LOADING titles
+    INFO
+    LOADING salaries
+    data_load_time_diff
+    00:00:19 
+    ```
+    위와 같이나왔다면 성공!
 
 
