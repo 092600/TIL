@@ -127,7 +127,7 @@
 - [사용자 및 권한](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap3/Chap3.md)
 - [MySQL 아키텍쳐](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap4/Chap4.md)
 - [트랜잭션과 잠금](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap5/Chap5.md)
-- [데이터 압축](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap6/Cchap6.md)
+- [데이터 압축](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap6/Chap6.md)
 - [데이터 암호화](https://github.com/092600/TIL/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/RealMySQL/Chap7/Chap7.md)
 
 ### 자바 ORM 표준 JPA 프로그래밍
