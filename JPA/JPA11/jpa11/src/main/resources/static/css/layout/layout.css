@@ -1,0 +1,51 @@
+
+.headerDiv {
+    width : 100%;
+    height: 10%;
+
+    display: flex;
+
+    border-bottom: 2px solid gray;
+}
+
+.headerInnerDiv1 {
+    align-items: center;
+    justify-content: left;
+
+    display: flex;
+
+    width: 50%;
+    height: 100%;
+}
+
+.headerInnerDiv1 p {
+    font-size : 33px;
+}
+
+.headerInnerDiv2 {
+    align-items: center;
+    justify-content: right;
+
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+}
+
+.headerInnerDiv2 p {
+    font-size : 20px;
+}
+
+
+.footerDiv {
+    border-top : 2px solid gray;
+
+    width : 100%;
+    height: 88px;
+
+    margin-top : 33px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

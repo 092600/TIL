@@ -2,6 +2,7 @@ package com.example.jpa11.domain.item;
 
 
 import com.example.jpa11.domain.category.Category;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

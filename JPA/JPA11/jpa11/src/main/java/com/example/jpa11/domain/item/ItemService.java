@@ -1,6 +1,7 @@
 package com.example.jpa11.domain.item;
 
 import lombok.RequiredArgsConstructor;
+import org.hibernate.event.spi.DirtyCheckEvent;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -13,8 +14,15 @@ public class ItemService {
 
     private final ItemRepository itemRepository;
 
-    void saveItem(Item item) {
-        itemRepository.save(item);
+    public void saveItem(Item item) {
+        if (item.getId() == null) {
+            itemRepository.save(item);
+        } else {
+            Item findItem = itemRepository.findItemById(item.getId());
+
+            findItem.setPrice(item.getPrice());
+            findItem.setStockQuantity(item.getStockQuantity());
+        }
     }
 
     public List<Item> findItems() {
