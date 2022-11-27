@@ -1,0 +1,30 @@
+.mainDiv {
+    width : 100%;
+    height: 80%;
+
+    border-bottom: 2px solid gray;
+}
+
+.mainDiv>div {
+    width : 60%;
+    height: 100%;
+
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+}
+.mainDiv>div>form {
+    width : 80%;
+    height: 100%;
+}
+
+.mainDiv select {
+    width : 100%;
+    height: 38px;
+}
+
+.mainDiv option {
+    width: 100%;
+    height: 38px;
+}

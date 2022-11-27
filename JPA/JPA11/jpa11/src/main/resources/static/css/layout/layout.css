@@ -4,8 +4,6 @@
     height: 10%;
 
     display: flex;
-
-    border-bottom: 2px solid gray;
 }
 
 .headerInnerDiv1 {
@@ -34,6 +32,34 @@
 
 .headerInnerDiv2 p {
     font-size : 20px;
+}
+
+.headerDiv2 {
+    width : 100%;
+    height: 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.headerDiv2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size : 16px;
+
+    width : 33%;
+    height: 100%;
+}
+
+.headerDiv2 div a {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 

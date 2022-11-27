@@ -41,19 +41,19 @@ public class ItemController {
 
     @GetMapping(value = "/items/{itemId}/edit")
     public String updateItemForm(@PathVariable("itemId") Long itemId, Model model) {
-        System.out.println(itemId);
 
-        Item item = itemService.findOne(itemId);
+        Book item = itemService.findOne(itemId);
         model.addAttribute("item", item);
+
         return "items/updateItemForm";
     }
 
     @PostMapping(value = "/items/{itemId}/edit")
-    public String updateItem(@ModelAttribute("item") Book item) {
-        System.out.println(item.getId());
-
-        itemService.saveItem(item);
+    public String updateItem(@ModelAttribute("item") Book tmp) {
+        itemService.saveItem(tmp);
 
         return "redirect:/items";
     }
+
+
 }

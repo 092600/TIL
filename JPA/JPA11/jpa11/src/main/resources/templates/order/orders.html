@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sodipodi="http://java.sun.com/xml/ns/j2ee"
+        xmlns:inkscape="http://java.sun.com/xml/ns/javaee"
+        layout:decorate="~{layout/layout}"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+
+    <link rel="stylesheet" th:href="@{/css/createForm.css}" >
+    <link rel="stylesheet" th:href="@{/css/orders.css}" >
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="mainDiv">
+            <div>
+<!--                <select id="memberId" name="memberId">-->
+<!--                    <option th:each="mem : ${members}"-->
+<!--                            th:value="${mem.id}" th:text="${mem.name}">-->
+<!--                    </option>-->
+<!--                </select>-->
+
+                <div class="mainInnerDiv1">
+                    <div class="orderCate1">#</div>
+                    <div class="orderCate2">회원명</div>
+                    <div class="orderCate3">대표상품 이름</div>
+                    <div class="orderCate4">상품 총가격</div>
+                    <div class="orderCate5">대표상품 주문수량</div>
+                    <div class="orderCate6">상태</div>
+                    <div class="orderCate7">일시</div>
+                    </div>
+                </div>
+<!--                <div class="mainInnerDiv2" th:if="${orders}" th:each="order : ${orders}">-->
+<!--                    <div class="orderCate1">-->
+<!--                        <p th:text="${item.id}"></p>-->
+<!--                    </div>-->
+<!--                    <div class="orderCate2">-->
+<!--                        <p th:text="${item.name}"></p>-->
+<!--                    </div>-->
+<!--                    <div class="orderCate3">-->
+<!--                        <p th:text="${item.price}"></p>-->
+<!--                    </div>-->
+<!--                    <div class="orderCate4">-->
+<!--                        <p th:text="${item.stockQuantity}"></p>-->
+<!--                    </div>-->
+<!--                    <div class="orderCate5">-->
+<!--                        <p th:text="${item.stockQuantity}"></p>-->
+<!--                    </div>-->
+<!--                    <div class="orderCate6">-->
+<!--                        <p th:text="${item.stockQuantity}"></p>-->
+<!--                    </div>-->
+<!--                    <div class="orderCate7">-->
+<!--                        <p th:text="${item.stockQuantity}"></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

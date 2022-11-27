@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sodipodi="http://java.sun.com/xml/ns/j2ee"
+        xmlns:inkscape="http://java.sun.com/xml/ns/javaee"
+        layout:decorate="~{layout/layout}"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+
+    <link rel="stylesheet" th:href="@{/css/createForm.css}" >
+    <link rel="stylesheet" th:href="@{/css/orders.css}" >
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="mainDiv">
+            <div>
+                <form action="/order" method="POST">
+                    <h3>주문회원</h3>
+                    <select id="memberId" name="memberId">
+                        <option th:each="mem : ${members}"
+                                th:value="${mem.id}" th:text="${mem.name}">
+                        </option>
+                    </select>
+
+                    <h3>상품명</h3>
+                    <select id="itemId" name="itemId">
+                        <option th:each="item : ${items}"
+                                th:value="${item.id}" th:text="${item.name}">
+                        </option>
+                    </select>
+
+                    <h3>주문수량</h3>
+                    <input id="count" name="count">
+
+                    </br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

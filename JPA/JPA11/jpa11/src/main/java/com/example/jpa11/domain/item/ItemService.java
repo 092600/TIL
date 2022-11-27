@@ -1,5 +1,6 @@
 package com.example.jpa11.domain.item;
 
+import com.example.jpa11.domain.item.book.Book;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.event.spi.DirtyCheckEvent;
 import org.springframework.stereotype.Service;
@@ -14,14 +15,14 @@ public class ItemService {
 
     private final ItemRepository itemRepository;
 
-    public void saveItem(Item item) {
-        if (item.getId() == null) {
-            itemRepository.save(item);
+    public void saveItem(Item tmp) {
+        if (tmp.getId() == null) {
+            itemRepository.save(tmp);
         } else {
-            Item findItem = itemRepository.findItemById(item.getId());
+            Item item = itemRepository.findItemById(tmp.getId());
 
-            findItem.setPrice(item.getPrice());
-            findItem.setStockQuantity(item.getStockQuantity());
+            item.setPrice(tmp.getPrice());
+            item.setStockQuantity(tmp.getStockQuantity());
         }
     }
 
@@ -29,8 +30,8 @@ public class ItemService {
         return itemRepository.findAll();
     }
 
-    public Item findOne(Long id) {
-        return itemRepository.findItemById(id);
+    public Book findOne(Long id) {
+        return (Book) itemRepository.findItemById(id);
     }
 
 }

@@ -1,5 +1,6 @@
 package com.example.jpa11.domain.member;
 
+import com.example.jpa11.domain.address.Address;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -37,5 +38,21 @@ public class MemberService {
 
     public List<Member> findByName(String name) {
         return memberRepository.findAllByName(name);
+    }
+
+    public void memberSetting() {
+        Member mem1 = new Member();
+        mem1.setName("sim"); mem1.setAddress(new Address("fds", "gdsv", "dfadm"));
+
+        Member mem2 = new Member();
+        mem2.setName("kim"); mem2.setAddress(new Address("kk", "fd", "gd"));
+
+        try {
+            join(mem1);
+            join(mem2);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
