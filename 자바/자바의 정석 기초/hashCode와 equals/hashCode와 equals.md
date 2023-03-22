@@ -1,334 +1,365 @@
-> 자바의 정석 기초와 나 혼자 공부하는 자바라는 책을 보고 공부한 후 작성한 내용입니다.
+# 1. 객체 비교
 
-# 해쉬코드 (HashCode)
-> 해쉬코드란 자바에서 객체를 식별하는 하나의 정수값을 말한다.
-> Object의 hashCode() 메서드는 객체의 메모리 번지를 이용해 해쉬코드를 만들어 리턴하기 때문에 객체마다 다른 값을 가질 수 없는데
-> 이러한 특징때문에 객체를 비교할 때 주로 사용한다.
+자바에서는 객체를 생성하여 사용합니다. 그렇다면 생성한 객체들이 같은 객체인지 어떻게 판단할 수 있을까요 ? 객체들간의 비교는 비교 연산자인 "=="를 사용하여 비교할 수 있습니다. 아래의 예를 보시겠습니다.
 
-```java
-public class Object {
-    ...
-    
-    @IntrinsicCandidate
-    public native int hashCode();
-}  
-```
+<br>
 
-자바에서 객체를 정의하는 Object 클래스가 작성된 코드를 살펴보면 hashCode() 메서드가 어떻게 정의되어있는지 확인할 수 있다.
+- 객체 비교 예시
+  ```java
+  public class Main {
+      public static void main(String[] args){
+          Car c1 = new Car("c1", "red");
+          Car c2 = new Car("c2", "blue");
 
-public native int hashCode() 에서 native는 자바가 아닌 언어로 구현한 후 자바에서 사용하려고 할 때 이용하는 키워드인데 보통 해쉬코드는 OS가 가지고 있는 C언어로 작성된 메서드를 자바에서 사용할 수 있다.
+          System.out.println(c1 == c2); // 6번째 줄
+      }
+  }
+
+  class Car {
+      private String name;
+      private String color;
+
+      public Car(String name, String color) {
+          this.name = name;
+          this.color = color;
+      }
+  }
+  ```
+  
+위의 Main 클래스를 실행하면 두 개의 다른 Car 객체를 생성하고 우리는 당연하게도 이 두 객체가 다른 것을 알고있기 때문에 "System.out.println(c1 == c2);"의 결과로 false가 나올 것이라고 예상합니다. 그렇다면 다르게 예를 들어보겠습니다.
+
+<br>
 
 
-# equals()
+- 객체 비교 예시 2
+  ```java
+  public class Main {
+      public static void main(String[] args){
+          Car c1 = new Car("c1", "red");
+          Car c2 = new Car("c1", "red");
 
-```java
-public class Object {
-    ...
+          System.out.println(c1 == c2); // 6번째 줄
+      }
+  }
 
-    public boolean equals(Object obj) {
-        return (this == obj);
-    }
-}
-```
+  class Car {
+      .. 생략 ..
+  }
+  ```
 
-Object 클래스에서는 hashCode()메서드 말고도 객체 비교를 할 수 있는 eqauls() 메서드 또한 정의되어있다. Object 클래스의 equals() 메서드는 비교 연산자인 == 와 동일한 결과를 리턴하는데 오로지 참조값(객체의 주소값)이 같은지 확인한다. 쉽게 말하면 두 객체가 동일한 객체인지 확인하는 것이다.
+위의 예시는 "System.out.println(c1 == c2);"는 true를 출력할까요 false를 출력할까요 ? 당연히 false를 출력합니다. c1과 c2 두 객체는 다른 메모리 주소에 저장되어 있기 때문입니다. 그렇다면 마지막 예시를 보겠습니다.
+ 
+ 
+ <br>
 
-대게 자바를 사용할 때 두 객체가 동일한 객체인지 확인하기 위해서 equals() 메서드를 사용하는데 두 객체가 논리적으로 동일한 객체라면 true, 다른 객체라면 false를 리턴한다.
 
-```java
-public class test {
-    public static void main(String[] args){
-        Car c1 = new Car();
-        Car c2 = new Car();
-        Car c3 = c1;
+- 객체 비교 예시 3
+  ```java
+  public class Main {
+      public static void main(String[] args){
+          Car c1 = new Car("c1", "red");
+          Car c2 = c1;
 
-        System.out.println("c1.equals(c2) = "+c1.equals(c2));
-        System.out.println("c1.equals(c3) = "+c1.equals(c3));
+          System.out.println(c1 == c2); // 6번째 줄
+      }
+  }
+
+  class Car {
+      .. 생략 ..
+  }
+  ```
+  
+이번에 "System.out.println(c1 == c2);"의 결과로 true가 출력되는 이유는 c2 는 c1을 참조하는 객체로 같은 메모리 주소를 가지기 때문에 true를 반환합니다.
+  
+사실 비교연산자인 "=="는 두 객체의 동일성을 비교하는 객체로 Car 객체의 name 값이나 color 값이 동일한지 확인하는 것이 아니라 객체가 저장된 메모리 주소의 값이 같다면 true를 출력합니다. 
+
+---
+<br>
+
+<br>
+
+
+## 1-1. 동등성비교와 equals()
+
+지금까지는 비교연산자인 "==" 를 사용해서 두 객체가 동일한 메모리 주소에 가지는지, 즉 동일성을 비교했습니다. 그렇다면 두 객체가 값이 같은지, 객체 값의 동등성(Equality)을 확인하려면 어떻게 해야할까요 ? equals 메서드를 오버라이딩하여 사용하면 됩니다.
+
+equals() 메서드를 아래와 같이 정의되어 있습니다.
+
+- equals() 메서드
+  ```java
+  public boolean equals(Object obj) {
+      return (this == obj);
+  }
+  ```
+
+
+
+equals를 재정의하지 않으면 비교연산자인 "=="를 사용해 두 객체의 동일성을 비교하고, 비교한 결과를 리턴합니다. 하지만 객체 값의 동등성을 비교하려면 equals() 메서드를 오버라이딩해주어야 하며, 오버라이딩 전에 String 객체를 비교한 아래의 예시를 보도록 하겠습니다.
+
+<br>
+
+- equals() 객체 비교 예시
+  ```java
+  public class Main {
+      public static void main(String[] args){
+          String str1 = "STRING";
+          String str2 = "STRING2";
+          String str3 = "STRING";
         
-        System.out.println("c1.hashCode() = "+c1.hashCode());
-        System.out.println("c2.hashCode() = "+c2.hashCode());
-        System.out.println("c3.hashCode() = "+c3.hashCode());
-    }
+          System.out.println(str1.equals(str2));
+          System.out.println(str1.equals(str3));
+      }
+  }
+
+  ```
+  
+- 실행결과
+  ```
+  false   
+   true  
+  ```
 
 
-class Car{
-    private String name;
-    private String color;
+위의 예에서 Object 클래스에 정의된 equals() 메서드를 사용했다면 false가 나와야하는데 어떻게 true가 출력됬는지 String 클래스가 정의되어있는 소스코드를 보면서 확인해보겠습니다.
 
-    public Car(){
 
-    }
+<br>
 
-    public Car(String name){
-        this.name = name;
-    }
 
-    public Car(String name, String color){
-        this.name = name;
-        this.color = color;
-    }
+- String 클래스에 equals() 메서드
+  ```java
+  public boolean equals(Object anObject) {
+      if (this == anObject) {
+          return true;
+      }
+
+      return (anObject instanceof String aString)
+                  && (!COMPACT_STRINGS || this.coder == aString.coder)
+                  && StringLatin1.equals(value, aString.value);
+  }
+  ```
+  
+String 클래스는 위와 같이 두 객체가 다른 메모리 주소에 저장되어 있는 경우 값이 같은 경우에는 참(true), 다른 경우에는 거짓(false)을 반환하도록 메서드를 재정의하고 있습니다. 그렇기 때문에 str1.equals(str3)는 true를 반환한 것이죠. 이렇듯 객체를 정의하고 두 객체의 값이 같은지, 즉 두 객체의 동등성을 비교해주기 위해선 equals 메서드를 재정의해주어야 합니다. 재정의하지 않은 경우 동일성만을 판단해줄 뿐이죠
+
+
+## 1-2. hashCode()
+
+hashCode() 메서드에 대해서 이야기하기 전에 예 몇가지를 보고 가겠습니다.
+
+- Car 객체의 equals() 오버라이딩하기
+  ```java
+public class Main {
+	public static void main(String[] args) {
+		Car c1 = new Car("c1", "red");
+		Car c2 = new Car("c2", "blue");
+		Car c3 = new Car("c1", "red");
+
+		System.out.println(c1 == c2); 
+		System.out.println(c1.equals(c2)); 
+
+		System.out.println(c1 == c3); 
+		System.out.println(c1.equals(c3)); 
+	}
 }
-```
-실행결과
-```
-c1.equals(c2) = false
-c1.equals(c3) = true
-c1.hashCode() = 798154996
-c2.hashCode() = 681842940
-c3.hashCode() = 798154996
-```
 
-위의 예를보면 논리적으로 c1과 c3는 동일한 객체고 c2는 c1과 다른 객체라는 것을 알 수 있을 것이다. 그렇기 때문에 c1과 c2를 equals() 메서드를 사용해 비교했을 때 false가 나오는 것이고 c1과 c3를 equals() 메서드를 사용해 비교했을 때 true가 나오는 것이다.
+  class Car {
+      private String name;
+      private String color;
 
-또 hashCode()메서드를 사용한 값 또한 c1과 c3가 같음을 확인할 수 있는데 그 이유는 두 객체가 동일한 메모리 주소를 공유하고 있기 때문이다.
+      public Car(String name, String color) {
+          this.name = name;
+          this.color = color;
+      }
+      @Override
+      public boolean equals(Object obj) {
+          if (this == obj) {
+              return false;
+          }
 
-그렇다면 이제 name값과 color값을 넣어 Car 객체를 여러 개를 생성한 후에 equals() 메서드를 사용해보자. 
+          Car car = (Car) obj;
+          return (this.name == car.name) && (this.color == car.color);
+      }
+  }
+  ```
 
-```java
-public class Test2 {
-    public static void main(String[] args){
-        Car c4 = new Car("a", "red");
-        Car c5 = new Car("b", "red");
-        Car c6 = new Car("a", "red");
+<br>
 
-        System.out.println("c4.equals(c5) = "+ c4.equals(c5));
-        System.out.println("c4.equals(c6) = "+ c4.equals(c6));
+위와 같이 Car 클래스의 equals() 메서드를 재정의하여 객체의 name 값과 color 값이 같을 경우 참을 반환하고, 하나라도 다른 경우에는 거짓을 반환하도록 했습니다.
 
-        System.out.println("c4.hashCode() = "+ c4.hashCode());
-        System.out.println("c5.hashCode() = "+ c5.hashCode());
-        System.out.println("c6.hashCode() = "+ c6.hashCode());
-    }
-}
-```
-실행결과
-```
-c4.equals(c5) = false
-c4.equals(c6) = false
-c4.hashCode() = 1421795058
-c5.hashCode() = 1555009629
-c6.hashCode() = 41359092
+하지만 위와같이 equals() 메서드만 변경하면 위와같이 비교연산자 == 사용하면 false이지만 equals를 사용하면 true가 나오는 실행결과의 예상이 어려워질 수 있습니다. 비교연산자 "==" 를 사용할 때 뿐만아니라 자료구조인 Set을 사용할 때도 결과를 예상하기 어려워지죠
 
-```
+<br>
 
-위 예제에서 주목해서 봐야할 부분은 name값과 color값이 c4와 c6가 같음에도 불구하고 equals() 메서드의 결과값이 false가 나왔다는 부분이다. 왜 이런 결과가 나온것일까 ?
 
-그 이유를 알기위해서 Object 클래스가 equals() 메서드를 어떻게 정의했는지를 다시 한 번 볼 필요가 있을 것같다.
+- 자료구조 Set 사용 예시
+  ```java
+  public class Main {
+      public static void main(String[] args) {
+          Car c1 = new Car("c1", "red");
+          Car c2 = new Car("c1", "red");
+          
+          System.out.println(c1.equals(c2));
 
-```java
-public class Object {
-    ...
+          Set<Car> cars = new HashSet<>();
+          cars.add(c1);
+          cars.add(c2);
 
-    public boolean equals(Object obj) {
-        return (this == obj);
-    }
-}
-```
-Object 클래스에서 equals() 메서드는 두 객체를 == 연산자만을 사용해서 비교하는 것을 볼 수 있다. 그렇기 때문에 c4와 c6의 비교 결과가 false가 나온 것이다.
+          System.out.println(cars.size());
+      }
+  }
 
-name과 color 값이 같을때 true 값이 나오도록 하기위해서는 equals 메서드를 오버라이딩해줘야 한다. 우선 오버라이딩을 한 equals() 메서드를 확인해보자.
+  class Car {
+      .. 생략 ..
+  }
+  ```
 
-```java
-class Car{
-    private String name;
-    private String color;
+- 실행결과
+  ```
+  true
+  2
+  ```
+  
+  
+  <br>
 
-    public Car(){
 
-    }
+Set은 객체가 중복되는지 확인할 때 Hash Table을 사용합니다. 이 Hash Table은 어떤 데이터가 존재하는지 확인하기 위해서 해싱 알고리즘을 사용하며, 이 해싱 알고리즘에 사용되는 데이터가 바로 hashCode 값입니다. **hashCode란 메모리의 주소값을 정수로 변환한 값을 말하며 같은 주소값을 같은 객체는 hashCode 값이 동일해야 합니다.** 주소값을 정수 값으로 변환한 값이 hashCode 값이기 때문입니다.
 
-    public Car(String name){
-        this.name = name;
-    }
+<br>
 
-    public Car(String name, String color){
-        this.name = name;
-        this.color = color;
-    }
+---
+> 같은 메모리 주소를 같은 객체는 hashCode 값이 같다.
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Car car = (Car) o;
-        return Objects.equals(name, car.name) && Objects.equals(color, car.color);
-    }
-}
-```
+---
 
-위에서 오버라이딩한 equals() 메서드를 확인해보자. 우선 두 객체를 == 비교연산자를 사용해서 두 객체가 같다면 두 객체의 name과 color 값을 비교해서 같은지 확인하고 같다면 true를 반환하도록 코드를 작성했다. 이렇게 오버라이딩 한 후에 다시 Test2 코드를 실행시켜보자.
+<br>
 
-```java
-public class Test2 {
-    public static void main(String[] args){
-        Car c4 = new Car("a", "red");
-        Car c5 = new Car("b", "red");
-        Car c6 = new Car("a", "red");
+Car 객체인 c1과 c2는 다른 메모리 주소에 저장되어 있기 때문에 해쉬 코드 값이 다릅니다. 하지만 equals(Object)가 두 객체를 같다고 판단했으면, 두 객체의 hashCode 값은 항상 같아야 합니다. 그렇기 때문에 equals() 메서드를 오버라이딩 해주었다면 hashCode() 메서드도 오버라이딩 해주어야 합니다. 이번에는 hashCode() 메서드를 오버라이딩 하지 않았을 때 객체 c1과 c2의 hashCode 값을 확인해보도록 하겠습니다.
 
-        System.out.println("c4.equals(c5) = "+ c4.equals(c5));
-        System.out.println("c4.equals(c6) = "+ c4.equals(c6));
-    }
-}
-```
+<br>
 
-실행결과
-```
-c4.equals(c5) = false
-c4.equals(c6) = true
-c4.hashCode() = 1421795058
-c5.hashCode() = 1555009629
-c6.hashCode() = 41359092
-```
+- Car 객체인 c1과 c2의 hashCode 값 확인 예제
+  ```java
+  public class Main {
+        public static void main(String[] args) {
+            Car c1 = new Car("c1", "red");
+            Car c2 = new Car("c1", "red");
 
-두 객체의 hashCode값이 다름에도 equals() 메서드는 c4와 c6가 같다라고 판단한 것을 볼 수 있다. 그렇다면 이제 우리의 눈을 넓혀줄 예제를 보도록하자.
+            System.out.println(c1.hashCode());
+            System.out.println(c2.hashCode());
 
-```java
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-public class Test4 {
-    public static void main(String[] args){
-        List<Car> lst = new ArrayList<Car>();
-        Car c1 = new Car("a");
-        Car c2 = new Car("a");
-
-        lst.add(c1);
-        lst.add(c2);
-
-        System.out.println("c1.equals(c2) = "+c1.equals(c2));
-        System.out.println("lst.size() = "+lst.size());
-
-        Set<Car> carSet = new HashSet<Car>();
-        Car c3 = new Car("a");
-        Car c4 = new Car("a");
-
-        carSet.add(c3);
-        carSet.add(c4);
-
-        System.out.println("c3.equals(c4) = "+c3.equals(c4));
-        System.out.println("carSet.size() = "+carSet.size());
-
-        System.out.println("c3.hashCode() = "+c3.hashCode());
-        System.out.println("c4.hashCode() = "+c4.hashCode());
-    }
-}
-```
-실행결과
-```
-c1.equals(c2) = true
-lst.size() = 2
-c3.equals(c4) = true
-carSet.size() = 2
-c3.hashCode() = 1421795058
-c4.hashCode() = 1555009629
-```
-
-위의 예제에서 주목해야할 부분은 중복된 객체는 들어가지 않는 Set의 size가 2가 나왔다는 점이다. 분명 equals를 통해서 두 객체가 같다라는 결과가 나왔는데 어떻게 된 일일까? 그 이유는 바로 hashCode에 있다. 객체의 hashCode의 값을 보면 c3와 c4가 다른 것을 확인할 수 있는데 Set객체가 hashCode 이 두 개체의 hashCode값이 다르기때문에 다른 객체라고 판단했기때문에 set에 c3와 c4가 들어가 size가 2가 된 것이다.
-
-hashCode와 equals를 함께 재정의하지 않으면 위처럼 코드가 예상과 다르게 작동하는 문제가 자주 발생한다. 정확하게 말하면 hash값을 사용하는 컬렉션을 사용할 때 문제가 발생한다.
-
-이렇게 컬렉션에서 코드가 예상과 다르게 작동하는 이유는 컬렉션은 hashCode의 메서드의 리턴 값이 일치하고 equals 메서드의 리턴 값이 true여야 논리적으로 같은 객체라고 판단하기때문인데 위에서 equals() 메서드는 오버라이딩해줬지만 hashCode는 오버라이딩해주지 않았기 때문에 두 객체의 hashCode값이 달랐고 달랐기 때문에 컬렉션이 다른 객체라고 판단한 것이다.
-
-그렇다면 어떻게 hashCode를 재정의해야할까 ?
-
-# hashCode 재정의하기
-
-```java
-class Car{
-    private String name;
-    private String color;
-
-    public Car(){
-
+        }
     }
 
-    public Car(String name){
-        this.name = name;
+    class Car {
+        .. 생략 ..
     }
+  ```
 
-    public Car(String name, String color){
-        this.name = name;
-        this.color = color;
-    }
+- 실행 결과
+  ```
+  1933863327
+  112810359
+  ```
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Car car = (Car) o;
-        return Objects.equals(name, car.name) && Objects.equals(color, car.color);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, color);
-    }
-
-}
-```
-
-위와 같이 Car의 name과 color 값을 Objects의 hash() 메서드로 해쉬한 값을 Car클래스의 hashCode() 메서드가 리턴하도록 오버라이딩 해주면 name과 color 값이 같은 Car 객체는 같은 hashCode 값을 가지게된다.
-
-이제 hashCode() 메서드도 오버라이딩 해줬으니 다시 Test4를 실행해보자.
-
-```java
-import java.util.*;
-
-public class Test4 {
-    public static void main(String[] args){
-        List<Car> lst = new ArrayList<Car>();
-        Car c1 = new Car("a");
-        Car c2 = new Car("a");
-
-        lst.add(c1);
-        lst.add(c2);
-
-        System.out.println("c1.equals(c2) = "+c1.equals(c2));
-        System.out.println("lst.size() = "+lst.size());
-
-        Set<Car> carSet = new HashSet<Car>();
-        Car c3 = new Car("a");
-        Car c4 = new Car("a");
-
-        carSet.add(c3);
-        carSet.add(c4);
-
-        System.out.println("c3.equals(c4) = "+c3.equals(c4));
-        System.out.println("carSet.size() = "+carSet.size());
-
-        System.out.println("c3.hashCode() = "+c3.hashCode());
-        System.out.println("c4.hashCode() = "+c4.hashCode());
-    }
-}
-```
-실행결과
-```
-c1.equals(c2) = true
-lst.size() = 2
-c3.equals(c4) = true
-carSet.size() = 1
-c3.hashCode() = 93822847
-c4.hashCode() = 93822847
-```
-
-이제 Car 객체를 요소로 가지는 carSet의 size가 1이 나오는 것을 확인할 수 있다. 이렇게 컬력센을 사용할 때 객체의 hashCode()와 equals()를 오버라이딩 해줘야지 예상한 것과 같은 결과를 얻을 수 있다.
-
-equals() 메서드는 여러 객체들을 비교할 때 속도면에서 정수를 비교하는 것보다 느리고 효율적이지 않기때문에 hashCode()를 오버라이딩한 후에 사용하는 것이 좋다. 또 컬렉션 안에 객체를 저장할 때 결과 값이 예상한 것과 다르다면 객체의 hashCode()와 equals()를 상황에 맞게 재정의해주었는지 다시 한 번 생각해보도록 하자.
-
-# [참고] 32Bit JVM과 64Bit JVM에서의 hashCode
-
-```java
-public class Object {
-    ...
-    
-    @IntrinsicCandidate
-    public native int hashCode();
-}  
-```
-
-Object 객체에서 hashCode() 메서드를 재정의할 때 리턴값이 int인 것을 확인할 수 있다. 이는 64Bit JVM보다 32Bit JVM에서 자바를 먼저 사용했기때문인데 64Bit JVM에서 hashCode() 메서드를 사용할 때 hashCode값이 중복이 될 수 있음을 의미한다.
-
-64Bit JVM는 주소값이 8Bytes 값인 Long 타입을 사용하는 것이 좋지만 기존에 사용하던 hashCode() 메서드와의 통일성?때문에 int 타입을 아직 사용한다. 그렇기때문에 64Bit JVM에서 주소 값이 8Bytes이기때문에 Long타입의 값을 int 타입으로 변경하는 과정에서 중복이 발생할 수 있다.
+<br>
 
 
+hashCode 값은 Object 클래스에 정의되어 있는 hashCode() 메서드를 통해 확인할 수 있습니다. hashCode() 메서드는 아래와 같이 정의되어 있으며 여기에서의 natvie 키워드는 해당 코드가 C나 C++로 작성되어 있다는 뜻입니다. 
+
+<br>
+
+
+- Object 클래스의 hashCode() 정의
+  ```java
+  public class Object {
+
+      public native int hashCode();
+
+      .. 생략 ..
+  }
+  ```
+
+그렇다면 이제 equals() 메서드가 참을 반환할 때, 같은 hashCode 값을 갖도록 Car 클래스에서 hashCode() 메서드를 재정의해주도록 하겠습니다.
+
+<br>
+
+- Car 클래스 hashCode 메서드 재정의
+  ```java
+  class Car {
+
+      .. 생략 ..
+
+      @Override
+      public int hashCode() {
+          return Objects.hash(this.name, this.color);
+      }
+
+  }
+  ```
+
+Objects.hash() 메서드를 통해 Car 객체의 name 값과 color 값을 해싱하여 반환하도록 Car 클래스에 hashCode() 메서드를 오버라이딩해줬습니다. 이제 name 값과 color 값이 같은 Car 객체들은 같은 해시코드 값을 가질까요 ?
+
+<br>
+
+
+- hashCode() 테스트
+  ```java
+  public class hashCodeNEquals {
+      public static void main(String[] args) {
+          Car c1 = new Car("c1", "red");
+          Car c2 = new Car("c1", "red");
+          
+          System.out.println(c1.hashCode());
+          System.out.println(c2.hashCode());
+      }
+  }
+  ```
+
+- 실행 결과
+  ```
+  210404
+  210404
+  ```
+
+
+<br>
+
+hashCode() 메서드를 재정의하여 같은 멤버변수 값을 갖는 Car 객체는 같은 hashCode 값을 갖게 되었습니다. 마지막으로 Set 자료구조에 name 값과 color 값이 같은 두 객체를 넣어보고 두 객체를 동일한 객체로 판단하는지 확인해보고 마치겠습니다.
+
+<br>
+
+- 마지막 테스트
+  ```java
+  public class hashCodeNEquals {
+      public static void main(String[] args) {
+          Car c1 = new Car("c1", "red");
+          Car c2 = new Car("c1", "red");
+
+          Set<Car> cars = new HashSet<>();
+          cars.add(c1);
+          cars.add(c2);
+
+          System.out.println(cars.size());
+      }
+  }
+  ```
+
+- 실행결과
+  ```
+  1
+  ```
+  
+  
+  <br>
+  
+  <br>
+  
+  
+# 0. 정리
+
+1. 비교연산자 "=="는 객체가 저장된 메모리 주소가 같은지 확인한다 (동일성 확인)
+
+2. 객체를 equals() 메서드로 비교한다는 것은 객체의 값들이 같은지 알고싶은 것이다.
+
+3. equals 메서드를 재정의 해줄때는 hashCode 메서드도 꼭 재정의해주어야 한다.
