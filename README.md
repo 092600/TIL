@@ -132,7 +132,7 @@
 
 ### 4-2. Error
 
-- [플러터 업데이트 후, "CocoaPods not installed" 에러 발생]() 
+- [플러터 업데이트 후, "CocoaPods not installed" 에러 발생](https://github.com/092600/TIL/blob/master/플러터/Error/플러터 업데이트 후%2C "CocoaPods not installed" 에러 발생/플러터 업데이트 후%2C "CocoaPods not installed" 에러 발생.md) 
 
 
 ## 5. 토이 프로젝트 및 여러가지? 
