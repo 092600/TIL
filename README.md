@@ -110,13 +110,15 @@
 
 ## 4. 플러터
 
-### 4-1. Future / Stream Builder
+### 4-1 Widgets
+
+#### 4-1-1. Future / Stream Builder
 
 - [FutureBuilder](https://github.com/092600/TIL/플러터/Widgets/FutureBuilder_StreamBuilder/1.%20FutureBuilder.md)
 - [StreamBuilder](https://github.com/092600/TIL/플러터/Widgets/FutureBuilder_StreamBuilder/2.%20StreamBuilder.md)
 - [ConnectionState](https://github.com/092600/TIL/플러터/Widgets/FutureBuilder_StreamBuilder/3.%20ConnectionState.md)
 
-### 4-2. Scrollable Wdigets
+#### 4-1-2. Scrollable Wdigets
 
 - [single_child_scroll_view](https://github.com/092600/TIL/플러터/Widgets/Scrollable_Widgets/2.%20single_child_scroll_view/2-1.%20single_child_scroll_view.md)
 - [list_view](https://github.com/092600/TIL/플러터/Widgets/Scrollable_Widgets/3.%20list_view/3-1.%20list_view.md)
@@ -126,6 +128,11 @@
 - [sliver_app_bar](https://github.com/092600/TIL/플러터/Widgets/Scrollable_Widgets/6.%20custom_scroll_view/6-2.%20sliver_app_bar.md)
 - [scroll_bar](https://github.com/092600/TIL/플러터/Widgets/Scrollable_Widgets/6.%20custom_scroll_view/6-3.%20scroll_bar.md)
 - [refresh_indicator](https://github.com/092600/TIL/플러터/Widgets/Scrollable_Widgets/6.%20custom_scroll_view/6-4.%20refresh_indicator.md)
+
+
+### 4-2. Error
+
+- [플러터 업데이트 후, "CocoaPods not installed" 에러 발생]() 
 
 
 ## 5. 토이 프로젝트 및 여러가지? 
